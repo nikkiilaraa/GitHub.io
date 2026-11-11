@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vuela Alto - Carrera de Sobrecargo</title>
+  <!-- Tailwind CSS por CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+  <!-- ENCABEZADO Y NAVEGACIÓN -->
+  <header class="bg-[#0f2847] text-white sticky top-0 z-50 border-b border-slate-700 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+        </svg>
+        <span class="font-bold text-xl tracking-tight">Vuela Alto</span>
+      </div>
+      
+      <!-- Menú Desktop -->
+      <nav class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#inicio" class="hover:text-amber-400 transition-colors">Inicio</a>
+        <a href="#posibilidades" class="hover:text-amber-400 transition-colors">Áreas</a>
+        <a href="#pilares" class="hover:text-amber-400 transition-colors">Requisitos</a>
+        <a href="#plan" class="hover:text-amber-400 transition-colors">Plan de Estudios</a>
+      </nav>
+
+      <div class="hidden md:block">
+        <a href="#registro" class="text-xs bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded text-slate-200 border border-slate-600 transition-all">
+          Informes al 800-000-VUELA
+        </a>
+      </div>
+
+      <!-- Botón Menú Móvil -->
+      <button id="mobile-menu-btn" class="md:hidden text-slate-300 focus:outline-none" aria-label="Abrir menú">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a1c33] px-4 pt-2 pb-4 space-y-2 border-t border-slate-700">
+      <a href="#inicio" class="mobile-link block text-sm py-2 hover:text-amber-400">Inicio</a>
+      <a href="#posibilidades" class="mobile-link block text-sm py-2 hover:text-amber-400">Áreas</a>
+      <a href="#pilares" class="mobile-link block text-sm py-2 hover:text-amber-400">Requisitos</a>
+      <a href="#plan" class="mobile-link block text-sm py-2 hover:text-amber-400">Plan de Estudios</a>
+      <a href="#registro" class="mobile-link block text-xs bg-amber-500 text-slate-900 font-bold px-3 py-2 rounded text-center">Registrarme Ahora</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECCIÓN HERO -->
+    <section id="inicio" class="bg-[#0f2847] text-white py-12 md:py-16 border-b border-slate-700">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold mb-2 block">CARRERA PROFESIONAL</span>
+          <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+            Carrera de Sobrecargo de Aviación
+          </h1>
+          <p class="text-slate-300 text-sm md:text-base mb-6 leading-relaxed">
+            Mucho más que viajar. La tripulación de cabina coordina la seguridad y el bienestar de cada pasajero, con preparación, empatía y trabajo en equipo.
+          </p>
+          <div class="flex flex-wrap gap-4 items-center">
+            <a href="#registro" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-md text-sm transition-all shadow-lg flex items-center space-x-2">
+              <span>Más Información</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+          <div class="mt-8 flex items-center space-x-6 text-xs text-slate-400">
+            <span>Seguridad</span>
+            <span>&bull;</span>
+            <span>Servicio</span>
+            <span>&bull;</span>
+            <span>Desarrollo Humano</span>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="rounded-xl overflow-hidden shadow-2xl border-2 border-slate-700/50">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Sobrecargo de aviación" class="w-full h-80 object-cover">
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-950/90 to-transparent p-4">
+              <p class="text-xs text-slate-300 font-light">Tu próxima meta, más alta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 1: POSIBILIDADES -->
+    <section id="posibilidades" class="py-12 max-w-6xl mx-auto px-4">
+      <div class="mb-8">
+        <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold">CÓMO TE PREPARAMOS</span>
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mt-1">Un mundo de posibilidades a bordo</h2>
+        <p class="text-slate-600 text-sm mt-1">Descubre qué hace un sobrecargo, cómo prepararte y dónde puedes desarrollarte.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-slate-900 mb-2 flex items-center text-base">
+            <span class="w-2 h-2 rounded-full bg-blue-600 mr-2"></span> Funciones a bordo
+          </h3>
+          <p class="text-xs text-slate-500 mb-4">Seguridad y atención completa.</p>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li class="flex items-start"><span class="text-slate-400 mr-2">&bull;</span>Instrucciones y atención a los pasajeros en seguridad.</li>
+            <li class="flex items-start"><span class="text-slate-400 mr-2">&bull;</span>Asistencia ejecutiva y primera atención médica a bordo.</li>
+            <li class="flex items-start"><span class="text-slate-400 mr-2">&bull;</span>Aplicación de protocolos según la normativa de aviación civil.</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-slate-900 mb-2 flex items-center text-base">
+            <span class="w-2 h-2 rounded-full bg-amber-500 mr-2"></span> Requisitos de formación
+          </h3>
+          <p class="text-xs text-slate-500 mb-4">Prepara tu camino con éxito.</p>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li class="flex items-start"><span class="text-slate-400 mr-2">&bull;</span>Curso de preparación para la certificación de sobrecargo.</li>
+            <li class="flex items-start"><span class="text-slate-400 mr-2">&bull;</span>Módulos teóricos, normatividad y simuladores de vuelo.</li>
+            <li class="flex items-start"><span class="text-slate-400 mr-2">&bull;</span>Evaluación médica integral para la licencia técnica.</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+          <h3 class="font-bold text-slate-900 mb-2 flex items-center text-base">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 mr-2"></span> Campo laboral
+          </h3>
+          <p class="text-xs text-slate-500 mb-4">Oportunidades en distintas áreas.</p>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li class="flex items-start"><span class="text-slate-400 mr-2">&bull;</span>Tripulación de cabina en aerolíneas nacionales e internacionales.</li>
+            <li class="flex items-start"><span class="text-slate-400 mr-2">&bull;</span>Vuelos privados, aviación ejecutiva y chárter.</li>
+            <li class="flex items-start"><span class="text-slate-400 mr-2">&bull;</span>Áreas operativas, atención a pasajeros y formación de tripulantes.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BARRA DE INFORMACIÓN RÁPIDA -->
+    <section id="plan" class="bg-slate-100 py-8 border-y border-slate-200">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-lg font-bold text-slate-900 mb-6">Plan de Estudios y Detalle de la Carrera</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-white p-4 rounded-lg border border-slate-200 text-center">
+            <span class="block text-slate-500 text-xs">Duración</span>
+            <span class="font-bold text-slate-800 text-lg">6 meses</span>
+            <span class="block text-slate-400 text-[10px] mt-1">Dependiendo de modalidad teórica e intensiva</span>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-slate-200 text-center">
+            <span class="block text-slate-500 text-xs">Licencia Oficial</span>
+            <span class="font-bold text-slate-800 text-lg">Según normativa</span>
+            <span class="block text-slate-400 text-[10px] mt-1">Cumple lo exigido para integrarte a la aviación civil</span>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-slate-200 text-center">
+            <span class="block text-slate-500 text-xs">Derecho Médico</span>
+            <span class="font-bold text-slate-800 text-lg">Evaluación apta</span>
+            <span class="block text-slate-400 text-[10px] mt-1">Certificado psicofísico para tripulantes</span>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-slate-200 text-center">
+            <span class="block text-slate-500 text-xs">Inglés B2</span>
+            <span class="font-bold text-slate-800 text-lg">Comunicación a bordo</span>
+            <span class="block text-slate-400 text-[10px] mt-1">Nivel profesional para pasajeros y operaciones</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: TRES PILARES -->
+    <section id="pilares" class="py-12 max-w-6xl mx-auto px-4">
+      <div class="mb-8">
+        <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold">FORMACIÓN INTEGRAL</span>
+        <h2 class="text-2xl font-bold text-slate-900 mt-1">Tres pilares para tu formación</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-5 rounded-lg border border-slate-200">
+          <div class="w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm mb-3">1</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Seguridad Aérea</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Conocimiento profundo de la aeronave, equipos de emergencia y evacuación en caso de contingencia.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-lg border border-slate-200">
+          <div class="w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm mb-3">2</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Primeros Auxilios</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Atención de emergencias médicas a bordo, soporte vital básico y cuidado del pasajero.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-lg border border-slate-200">
+          <div class="w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm mb-3">3</div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Servicio a Borde</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">Desarrollo de protocolo, etiqueta, servicio de alimentos y excelencia en la atención al cliente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: FORMULARIO INTERACTIVO Y CONFIRMACIÓN -->
+    <section id="registro" class="py-12 bg-slate-100 border-t border-slate-200">
+      <div class="max-w-4xl mx-auto px-4">
+        
+        <!-- ESTADO 1: FORMULARIO DE REGISTRO -->
+        <div id="form-container" class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="grid md:grid-cols-3 gap-6 items-center">
+            <div class="md:col-span-1 border-r border-slate-100 pr-4">
+              <span class="text-xs uppercase text-amber-600 font-bold tracking-wider">TE ACOMPAÑAMOS</span>
+              <h2 class="text-2xl font-bold text-slate-900 mt-1">Tu vocación merece un buen despegue.</h2>
+              <p class="text-xs text-slate-500 mt-2">Déjanos tus datos para recibir información sobre admisiones y plan de becas disponibles.</p>
+            </div>
+
+            <div class="md:col-span-2">
+              <form id="signup-form" onsubmit="handleRegister(event)" class="space-y-4">
+                <div>
+                  <label for="full-name" class="block text-xs font-semibold text-slate-700 mb-1">Nombre completo</label>
+                  <input type="text" id="full-name" required placeholder="Ingresa tu nombre completo" class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+                <div>
+                  <label for="user-email" class="block text-xs font-semibold text-slate-700 mb-1">Correo electrónico</label>
+                  <input type="email" id="user-email" required placeholder="correo@ejemplo.com" class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2.5 rounded text-xs transition-all shadow-md">
+                  Obtener información
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- ESTADO 2: CONFIRMACIÓN (Oculto por defecto) -->
+        <div id="confirmation-container" class="hidden bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="grid md:grid-cols-3 gap-6 items-center">
+            <div class="md:col-span-1 border-r border-slate-100 pr-4">
+              <span class="text-xs uppercase text-amber-600 font-bold tracking-wider">TU VOCACIÓN MERECE</span>
+              <h2 class="text-2xl font-bold text-slate-900 mt-1">Tu vocación merece un buen despegue.</h2>
+              <p class="text-xs text-slate-500 mt-2">Déjanos tus datos para recibir información sobre admisiones y plan de becas disponibles.</p>
+            </div>
+
+            <div class="md:col-span-2 bg-slate-50 p-6 rounded-xl border border-slate-100 text-center md:text-left">
+              <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-3 mx-auto md:mx-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 mb-1">¡Gracias por registrarte! Hemos recibido tus datos correctamente.</h3>
+              <p class="text-xs text-slate-500">En breve te enviaremos información sobre la carrera y los próximos periodos de inscripción.</p>
+              <button onclick="resetForm()" class="mt-4 text-xs text-amber-600 underline hover:text-amber-700">Registrar otro correo</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-[#0f2847] text-white py-8 border-t border-slate-800 text-xs">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <div class="flex items-center space-x-2">
+        <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+        </svg>
+        <span class="font-bold">Vuela Alto</span>
+      </div>
+      <p class="text-slate-400 text-center">Información para aspirantes a la carrera profesional de Sobrecargo</p>
+      <p class="text-slate-500">&copy; 2026 Vuela Alto. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>

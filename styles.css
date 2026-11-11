@@ -1,0 +1,14 @@
+/* Transición de desplazamiento suave para los enlaces del menú */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ajustes personalizados complementarios a Tailwind */
+input:focus {
+  outline: none;
+}
+
+/* Sombra suave personalizada para tarjetas */
+.custom-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
